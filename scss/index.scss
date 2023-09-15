@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+margin: 0 auto;
+width: 1400px;
+}
+body{
+    font-family: Roboto;
+}
+
+// header
+
+.header{
+    background: #373A3C;
+    padding: 10px 0;
+    &__wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+    &__pic{
+        margin-right: 15px;
+    }
+    .header__nav {
+        .nav__menu {
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: aliceblue;
+            p {
+                margin: 0 25px;
+            }
+            input {
+                border: none;
+                border-radius: 3px;
+                padding: 18px 11px
+            }
+            & .t::after {
+                content: '';
+                display: inline-block;
+                align-items: center;
+                width: 20px;
+                height: 7px;
+                background: url(../img/Shape.png) no-repeat center center/ cover;
+                margin-left: 20px;
+            }
+            & .m::before {
+                content: '';
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background: url(../img/user.svg) ;
+                margin-left: 10px;
+            }
+            & .m::after {
+                content: '';
+                display: inline-block;
+                align-items: center;
+                width: 20px;
+                height: 7px;
+                background: url(../img/Shape.png) no-repeat center center/ cover;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+// reg
+
+.reg{
+        width: 300px;
+        border: 1px solid #000;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        &__title{
+            color: #979797;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        &__form{
+            width: 220px;
+            margin: 0 auto;
+            margin-bottom: 25px;
+        }
+
+        &__input{
+            width: 100%;
+            border-radius: 5px;
+            background: #dddddd;
+            box-shadow: 0px 0px 5px 2px rbda(0, 29, 108, 0.07);
+            border: none;
+            padding: 13px 20px;
+            margin-bottom: 15px;
+            }
+        
+
+        &__btn{
+            background-color: #8DD83D;
+            color: #fff;
+            text-align: center;
+            font-family: Roboto;
+            font-style: 17px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding: 15px 96px;
+            border-radius: 2px;
+            border: none;
+        }
+        
+        &__link{
+            color: rgba(0, 0, 0, 0.50);
+            text-align: center;
+            font-family: Roboto;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    .m{
+        color: #fff;
+        text-decoration: none;
+    }
+
+// back
+
+.back{
+    background: url(../img/Star-Wars-Battlefront-II-combat.png) no-repeat center center/cover;
+    width: auto;
+    &__wrap{
+        padding-top: 206px;
+        padding-bottom: 200px;
+        padding-left: 60%;
+        padding-right: 20%;
+    }
+    &__title {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__mintitle {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__buttons {
+        display: flex;
+        margin-top: 135px;
+        .back__button {
+            border-radius: 4px;
+            background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+            padding: 10px 15px;
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px; /* 131.25% */
+        }
+        .back__button_active {
+            background: #8DD83D;
+        }
+        .back__minitit{
+            color: #FFF;  
+        }
+    }
+    &__minitit{
+        color: #FFF;
+    }
+}  
